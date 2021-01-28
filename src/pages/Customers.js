@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
-import {Button, ListGroup, Table} from 'react-bootstrap'
-
+import {Button, Table} from 'react-bootstrap'
+import CustList from "../components/custList"
 
 class Customers extends Component {
     render() {
@@ -20,12 +20,7 @@ class Customers extends Component {
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Mark Benson</td>
-                        <td>353 Rochester St, Rialto FL</td>
-                        <td>555-534-2342</td>
-                    </tr>
+                    <CustList />
                     </tbody>
                 </Table>
 
