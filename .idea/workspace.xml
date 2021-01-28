@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="02e64a37-001a-4a0a-bb86-f8eddce5f1a2" name="Default Changelist" comment="" />
+    <list default="true" id="02e64a37-001a-4a0a-bb86-f8eddce5f1a2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/custList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/prodList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Customers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Customers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Products.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Products.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1nbJz42BxMnEw4XoZLtBVjy4Fye" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -38,7 +48,8 @@
       <updated>1611653120604</updated>
       <workItem from="1611653122624" duration="12397000" />
       <workItem from="1611671761100" duration="2955000" />
-      <workItem from="1611743305599" duration="381000" />
+      <workItem from="1611743305599" duration="977000" />
+      <workItem from="1611824211275" duration="3744000" />
     </task>
     <servers />
   </component>

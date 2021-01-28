@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Button, Table} from "react-bootstrap";
+import ProdList from "../components/prodList";
 
 class Products extends Component {
     render() {
@@ -18,11 +19,7 @@ class Products extends Component {
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Parachute Pants</td>
-                        <td>29.99</td>
-                    </tr>
+                    <ProdList />
                     </tbody>
                 </Table>
 
