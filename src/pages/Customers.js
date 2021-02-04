@@ -1,8 +1,9 @@
 import React, {Component} from 'react'
 import {Button, Table} from 'react-bootstrap'
 import CustList from "../components/custList"
-import {BrowserRouter as Router, Route, Switch} from "react-router-dom"
-import EditC from "./EditC"
+import {Link} from '@material-ui/core'
+import { Link as RouterLink } from 'react-router-dom'
+import {classes} from "istanbul-lib-coverage";
 
 class Customers extends Component {
     render() {
@@ -10,7 +11,16 @@ class Customers extends Component {
             <>
             <div className="container">
                 <h1>Customers list  {' '}
-                    <Button href="/EditC" variant="outline-secondary">Create</Button>
+                    <Link
+                        align="center"
+                        color="secondary"
+                        component={RouterLink}
+                        to="/editc"
+                        underline="always"
+                        variant="subtitle2"
+                        className={classes.link}
+                    >
+                        <Button variant="outline-secondary">Create</Button> </Link>
                 </h1>
 
                 <Table responsive>
@@ -29,14 +39,10 @@ class Customers extends Component {
 
             </div>
 
-        <Router>
-            <Switch>
-                <Route exact path="/EditC" component={EditC} />
-            </Switch>
-        </Router>
         </>
         )
     }
 }
 
 export default Customers
+

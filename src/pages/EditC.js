@@ -23,7 +23,7 @@ class EditC extends Component {
                         <Form.Control type="text" placeholder="Enter your phone number" />
                     </Form.Group>
 
-                    <Button variant="primary" type="submit">
+                    <Button variant="outline-secondary" type="submit">
                         Submit
                     </Button>
                 </Form>

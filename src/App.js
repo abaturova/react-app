@@ -1,13 +1,28 @@
-import React from 'react'
+import React, {Component} from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Header from "./components/header"
+import {Route, Switch, Redirect, withRouter} from "react-router-dom"
+import Customers from "./pages/Customers"
+import Products from "./pages/Products"
+import EditC from "./pages/EditC"
+import EditP from "./pages/EditP"
 
-function App() {
-    return (
-        <div >
-            <Header />
-        </div>
-    )
+class App extends Component {
+    render() {
+        const {history} = this.props
+        return (
+            <div className="App">
+                <Header/>
+                <Switch>
+                    <Route history={history} path='/customers' component={Customers}/>
+                    <Route history={history} path='/products' component={Products}/>
+                    <Route history={history} path='/editc' component={EditC}/>
+                    <Route history={history} path='/editp' component={EditP}/>
+                    <Redirect from='/' to='/home'/>
+                </Switch>
+            </div>
+        )
+    }
 }
 
-export default App
+export default withRouter(App)
