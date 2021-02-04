@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {Nav,Navbar} from "react-bootstrap"
-import {Route,BrowserRouter as Router, Switch, Link} from 'react-router-dom'
+import {Route,BrowserRouter as Router, Switch} from 'react-router-dom'
 import Customers from "../pages/Customers"
 import Products from "../pages/Products"
 
