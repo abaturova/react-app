@@ -16,10 +16,10 @@ class Header extends Component {
                     <Navbar.Brand href="/"><strong>Invoice App</strong></Navbar.Brand>
                     <Nav className="mr-auto">
                             <Link to="/customers"
-                                  classes={{root: classes.root}}
+                                  style={classes.root}
                                   component={FancyLink}>Customers</Link>
                             <Link to="/products"
-                                  className={classes.link}
+                                  style={classes.root}
                                   component={FancyLink}>Products</Link>
                     </Nav>
                 </Navbar>

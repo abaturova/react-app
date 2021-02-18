@@ -15,4 +15,4 @@ const styles = {
     },
 }
 
-export default withStyles(styles)
+export default styles
