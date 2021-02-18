@@ -13,8 +13,7 @@ class EditP extends Component {
     }
     handleChange(event){
         this.setState({
-            name: 'name',
-            price: '0.99'
+            [event.target.name]: event.target.value
         })
     }
     handleSubmit(event){
@@ -30,12 +29,12 @@ class EditP extends Component {
                     <Form onSubmit={this.handleSubmit}>
                         <Form.Group controlId="ProductForm">
                             <Form.Label>Name</Form.Label>
-                            <Form.Control value={this.state.name} onChange={this.handleChange} type="text" placeholder="Enter name of product" />
+                            <Form.Control value={this.state.name} name="name" onChange={this.handleChange} type="text" placeholder="Enter name of product" />
                         </Form.Group>
 
                         <Form.Group controlId="ProductForm">
                             <Form.Label>Price</Form.Label>
-                            <Form.Control value={this.state.price} onChange={this.handleChange} type="text" placeholder="Enter price of product" />
+                            <Form.Control value={this.state.price} name="price" onChange={this.handleChange} type="text" placeholder="Enter price of product" />
                         </Form.Group>
 
                         <Button variant="outline-secondary" type="submit">
