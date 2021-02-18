@@ -1,16 +1,11 @@
 import React, {Component} from 'react'
+import {UsersData} from "../constans/users"
 
 class CustList extends Component {
-    constructor(props) {
-        super(props)
-        this.state = [
-            {id:1, name: 'Mark Benson', address: '353 Rochester St, Rialto FL', tel: '555-534-2342' }
-        ]
-    }
     render() {
         return (
             <>
-                {this.state.map((prod ,ind) => {
+                {UsersData.map((prod ,ind) => {
                     return(
                         <tr key={ind}>
                             <td>{prod.id}</td>
