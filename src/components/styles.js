@@ -13,6 +13,12 @@ const styles = {
         },
 
     },
+    div: {
+        width: '600px',
+    },
+    form: {
+        align: 'left',
+    },
 }
 
 export default styles
