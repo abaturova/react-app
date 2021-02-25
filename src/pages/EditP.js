@@ -1,17 +1,25 @@
 import React, {Component} from 'react'
 import {Button, Form} from "react-bootstrap"
 import classes from '../components/styles'
-import ProductsData from '../constans/products'
+import {ProductsData} from '../constans/products'
 
 class EditP extends Component {
     constructor(props) {
         super(props)
-
+        let name, price, product
         let id = this.props.match.params.id
+        if(id) {
+            product = ProductsData.find( product => product.id === id)
+            name = product.name
+            price = product.price
+        } else {
+            name = ''
+            price = ''
+        }
+
         this.state = {
-            id: id,
-            name: '',
-            price: ''
+            name: name,
+            price: price
         }
         this.handleSubmit = this.handleSubmit.bind(this)
         this.handleChange = this.handleChange.bind(this)

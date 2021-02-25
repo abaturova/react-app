@@ -4,8 +4,13 @@
     <list default="true" id="02e64a37-001a-4a0a-bb86-f8eddce5f1a2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/prodList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/prodList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/EditP.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/EditP.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Products.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Products.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +71,7 @@
       <workItem from="1613632450807" duration="11844000" />
       <workItem from="1613735862805" duration="3161000" />
       <workItem from="1614173203882" duration="4830000" />
-      <workItem from="1614239005497" duration="2025000" />
+      <workItem from="1614239005497" duration="13736000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1611828352980</created>
@@ -138,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614177701464</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="commit">
+      <created>1614241215892</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1614241215892</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

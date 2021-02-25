@@ -1,9 +1,9 @@
-import React, {Component} from 'react';
-import {Button, Table} from "react-bootstrap";
-import ProdList from "../components/prodList";
-import {Link as RouterLink} from "react-router-dom";
-import {classes} from "istanbul-lib-coverage";
-import {Link} from "@material-ui/core";
+import React, {Component} from 'react'
+import {Table} from "react-bootstrap"
+import ProdList from "../components/prodList"
+import {Link as RouterLink} from "react-router-dom"
+import classes from "../components/styles"
+import {Link , Button} from "@material-ui/core"
 
 class Products extends Component {
     render() {
@@ -11,15 +11,11 @@ class Products extends Component {
             <div className="container">
                 <h1>Product list  {' '}
                     <Link
-                        align="center"
-                        color="secondary"
                         component={RouterLink}
-                        to="/editp"
-                        underline="always"
-                        variant="subtitle2"
-                        className={classes.link}
+                        to="/products/create"
+                        style={classes.root}
                     >
-                        <Button variant="outline-secondary">Create</Button> </Link>
+                        <Button variant="outlined">Create</Button> </Link>
                 </h1>
 
                 <Table responsive>
@@ -28,6 +24,7 @@ class Products extends Component {
                         <th>#</th>
                         <th>Name</th>
                         <th>Price</th>
+                        <th> </th>
                     </tr>
                     </thead>
                     <tbody>
