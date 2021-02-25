@@ -8,10 +8,9 @@ class EditP extends Component {
         super(props)
 
         let id = this.props.match.params.id
-        let name = this.props.match.params.name
         this.state = {
             id: id,
-            name: name,
+            name: '',
             price: ''
         }
         this.handleSubmit = this.handleSubmit.bind(this)

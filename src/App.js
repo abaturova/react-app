@@ -17,8 +17,8 @@ class App extends Component {
                     <Route history={history} path='/customers' component={Customers}/>
                     <Route history={history} path='/products' component={Products}/>
                     <Route history={history} path='/editc' component={EditC}/>
-                    <Route history={history} path='/editp' component={EditP}/>
-                    <Route path="/products/:id/:name/" component={EditP} />
+                    <Route exact history={history} path='/editp' component={EditP}/>
+                    <Route path="/products/:id" component={EditP} />
                     <Redirect from='/' to='/home'/>
                 </Switch>
             </div>
