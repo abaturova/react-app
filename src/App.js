@@ -14,11 +14,12 @@ class App extends Component {
             <div className="App">
                 <Header/>
                 <Switch>
-                    <Route history={history} path='/customers' component={Customers}/>
+                    <Route exact history={history} path='/customers' component={Customers}/>
                     <Route exact history={history} path='/products' component={Products}/>
-                    <Route history={history} path='/editc' component={EditC}/>
+                    <Route history={history} path='/customers/create' component={EditC}/>
                     <Route history={history} path='/products/create' component={EditP}/>
                     <Route path="/products/:id" component={EditP} />
+                    <Route path="/customers/:id" component={EditC} />
                     <Redirect from='/' to='/home'/>
                 </Switch>
             </div>

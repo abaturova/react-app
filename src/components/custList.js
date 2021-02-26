@@ -1,5 +1,8 @@
 import React, {Component} from 'react'
-import {UsersData} from "../constans/users"
+import {UsersData} from "../constans/customers"
+import {IconButton, Link} from "@material-ui/core"
+import {Link as RouterLink} from "react-router-dom"
+import EditIcon from '@material-ui/icons/Edit'
 
 class CustList extends Component {
     render() {
@@ -12,6 +15,11 @@ class CustList extends Component {
                             <td>{prod.name}</td>
                             <td>{prod.address}</td>
                             <td>{prod.tel}</td>
+                            <td><Link component={RouterLink} key={prod.id} to={{ pathname: `/customers/${prod.id}`}}>
+                                <IconButton aria-label="edit">
+                                    <EditIcon />
+                                </IconButton>
+                            </Link> </td>
                         </tr>
                     )
                 })}

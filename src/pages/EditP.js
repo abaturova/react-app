@@ -1,25 +1,29 @@
 import React, {Component} from 'react'
-import {Button, Form} from "react-bootstrap"
+import {Form} from "react-bootstrap"
 import classes from '../components/styles'
 import {ProductsData} from '../constans/products'
+import {Button} from '@material-ui/core'
 
 class EditP extends Component {
     constructor(props) {
         super(props)
-        let name, price, product
+        let name, price, product, word
         let id = this.props.match.params.id
         if(id) {
-            product = ProductsData.find( product => product.id === id)
+            product = ProductsData.find( product => product.id == id)
             name = product.name
             price = product.price
+            word = 'Edit'
         } else {
             name = ''
             price = ''
+            word = 'Create'
         }
 
         this.state = {
             name: name,
-            price: price
+            price: price,
+            word: word
         }
         this.handleSubmit = this.handleSubmit.bind(this)
         this.handleChange = this.handleChange.bind(this)
@@ -38,8 +42,8 @@ class EditP extends Component {
     render() {
         return (
             <>
-                <div className="container" align={'center'} style={classes.div}>
-                    <h1>Edit Product</h1>
+                <div className="container" style={classes.div}>
+                    <h1>{this.state.word} Product</h1>
                     <Form onSubmit={this.handleSubmit} style={classes.form}>
                         <Form.Group controlId="ProductForm">
                             <Form.Label>Name</Form.Label>
@@ -51,8 +55,8 @@ class EditP extends Component {
                             <Form.Control value={this.state.price} name="price" onChange={this.handleChange} type="text" placeholder="Enter price of product" />
                         </Form.Group>
 
-                        <Button variant="outline-secondary" type="submit">
-                            Submit
+                        <Button variant="outlined" type="submit">
+                            Save
                         </Button>
                     </Form>
                 </div>

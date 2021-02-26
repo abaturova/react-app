@@ -18,7 +18,7 @@ const styles = {
         width: '600px',
     },
     form: {
-        align: 'left',
+        texalign: 'left',
     },
 }
 

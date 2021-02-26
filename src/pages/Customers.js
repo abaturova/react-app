@@ -1,9 +1,9 @@
 import React, {Component} from 'react'
-import {Button, Table} from 'react-bootstrap'
+import {Table} from 'react-bootstrap'
 import CustList from "../components/custList"
-import {Link} from '@material-ui/core'
+import {Link , Button} from '@material-ui/core'
 import { Link as RouterLink } from 'react-router-dom'
-import {classes} from "istanbul-lib-coverage";
+import classes from "../components/styles"
 
 class Customers extends Component {
     render() {
@@ -12,15 +12,11 @@ class Customers extends Component {
             <div className="container">
                 <h1>Customers list  {' '}
                     <Link
-                        align="center"
-                        color="secondary"
                         component={RouterLink}
-                        to="/editc"
-                        underline="always"
-                        variant="subtitle2"
-                        className={classes.link}
+                        to="/customers/create"
+                        style={classes.root}
                     >
-                        <Button variant="outline-secondary">Create</Button> </Link>
+                        <Button variant="outlined">Create</Button> </Link>
                 </h1>
 
                 <Table responsive>
@@ -30,6 +26,7 @@ class Customers extends Component {
                         <th>Name</th>
                         <th>Address</th>
                         <th>Tel.</th>
+                        <th> </th>
                     </tr>
                     </thead>
                     <tbody>
